@@ -10,7 +10,7 @@ const Button = () => {
     <div className="mainDiv">
       <h1>ALBUMS</h1>
       <button className="button2" onClick={showHandler}>
-        SHOW / HIDE
+        {show ? "HIDE" : "SHOW"}
       </button>
       {show ? <Album /> : <></>}
     </div>

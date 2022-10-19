@@ -1,10 +1,33 @@
 .albumDiv {
-    background-color: aquamarine;
-    width: 250px;
-    height: 250px;
-    display: flex;
+    background-color: #009087;
+    display: grid;
     align-items: center;
     justify-content: center;
     border-radius: 20px;
+    padding: 2rem;
     margin: 1.5rem;
+    grid-template-columns: 300px 300px 300px 300px;
+
+    margin: 1rem auto;
+}
+
+@media only screen and (max-width: 1500px) {
+    .albumDiv {
+        grid-template-columns: 300px 300px 300px 300px;
+    }
+}
+@media only screen and (max-width: 1200px) {
+    .albumDiv {
+        grid-template-columns: 300px 300px 300px;
+    }
+}
+@media only screen and (max-width: 896px) {
+    .albumDiv {
+        grid-template-columns: 300px 300px;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .albumDiv {
+        grid-template-columns: 300px;
+    }
 }
